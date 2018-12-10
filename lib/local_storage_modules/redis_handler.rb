@@ -1,8 +1,12 @@
 module LocalStorageModules
    module RedisHandler
-      extend ActiveSupport::Concern
+      #extend ActiveSupport::Concern
       require 'pstore'
       #require 'securerandom'
+
+      def self.included(base)  # `base` is `HostClass` in our case
+         base.extend ClassMethods
+       end
 
       STORAGES =
           {
