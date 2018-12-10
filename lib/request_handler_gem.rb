@@ -12,5 +12,6 @@ class RequestHandlerGem
    end
 
    include @@include_handler
+   extend @@extend_methods
    
 end
