@@ -6,7 +6,7 @@ module LocalStorageModules
 
       def self.included(base)  # `base` is `HostClass` in our case
          base.extend ClassMethods
-       end
+      end
 
       STORAGES =
           {
