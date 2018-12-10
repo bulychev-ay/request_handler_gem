@@ -1,9 +1,9 @@
 module LocalStorageModules
    module PStoreHandler
 
-      def self.included(base)  # `base` is `HostClass` in our case
-         base.extend ClassMethods
-      end
+      # def self.included(base)  # `base` is `HostClass` in our case
+      #    base.extend ClassMethods
+      # end
 
       #extend ActiveSupport::Concern
       require 'pstore'
